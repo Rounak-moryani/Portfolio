@@ -38,7 +38,7 @@ body{
     width: 8rem;
     height: 8rem;
     border-radius: 100%;
-    background-image: url("/Resources/bg.jpg");
+    background-image: url("Resources/bg.jpg");
     background-size: cover;
     border: 0.2rem solid rgb(0, 102, 228);
     margin-top: 1rem;
@@ -132,7 +132,7 @@ body{
 
 .page-1{
     background: #000000;
-    background-image: url("/Resources/Dark.jpg");
+    background-image: url("Resources/Dark.jpg");
     background-size: cover;
 }
 
@@ -227,7 +227,7 @@ body{
     height: 20rem;
     /* background-color: #ffffff; */
     margin-top: 1.3rem;
-    background-image: url("/Resources/bg.jpg");
+    background-image: url("Resources/bg.jpg");
     background-size: contain;
     margin-left: 1rem;
 }
