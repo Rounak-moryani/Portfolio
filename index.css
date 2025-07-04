@@ -227,7 +227,7 @@ body{
     height: 20rem;
     /* background-color: #ffffff; */
     margin-top: 1.3rem;
-    background-image: url("/Resources/bg.jpg");
+    background-image: url("Resources/bg.jpg");
     background-size: contain;
     margin-left: 1rem;
 }
