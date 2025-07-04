@@ -132,7 +132,7 @@ body{
 
 .page-1{
     background: #000000;
-    background-image: url("/Resources/Dark.jpg");
+    background-image: url("Resources/Dark.jpg");
     background-size: cover;
 }
 
