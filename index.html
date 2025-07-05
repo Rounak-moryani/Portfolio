@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="m_index.css">
 
     <title>My Portfolio</title>
 </head>
 
 <body>
+    <button id="menu-toggle" class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+
     <div class="whole">
         <div class="side-profile">
+
             <div class="profile-photo">
 
             </div>
@@ -305,7 +311,7 @@
                     </div>
 
                     <div class="project-rightside">
-                        <div class="project-describe">
+                        <div class="project-describe des1">
                             <h3>Tourista -- Your Travel Guide</h3>
                             <span>
                                 Tourista is a front-end only tours and travel website built using HTML and CSS.
@@ -319,7 +325,7 @@
 
                             <button onclick="window.location.href='https://github.com/Rounak-moryani/Tourista'">Source Code</button>
                         </div>
-                        <div class="project-describe">
+                        <div class="project-describe des2">
                             <h3>Amazon Clone</h3>
                             <span>
                                 Amazon Clone is a front-end-only e-commerce website developed using HTML and CSS.
@@ -331,7 +337,7 @@
 
                             <button onclick="window.location.href='https://github.com/Rounak-moryani/Amazon-Clone'">Source Code</button>
                         </div>
-                        <div class="project-describe">
+                        <div class="project-describe des3">
                             <h3>Login Page -- Tourista</h3>
                             <span>
                                 This front-end-only implementation ensures an intuitive and visually appealing user
@@ -435,7 +441,7 @@
     <script>
 
         (function () {
-            emailjs.init("jJ9CGbpPv4SjAZWDV"); 
+            emailjs.init("jJ9CGbpPv4SjAZWDV");
         })();
 
         document.getElementById('contact-form').addEventListener('submit', function (event) {
@@ -447,6 +453,23 @@
                 }, function (error) {
                     alert("Failed to send email. Error: " + JSON.stringify(error));
                 });
+        });
+
+        const toggleBtn = document.getElementById('menu-toggle');
+        const sidebar = document.querySelector('.side-profile');
+        const links = sidebar.querySelectorAll('a');
+
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        // 🔁 Auto-close sidebar on link click (mobile only)
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 600) {
+                    sidebar.classList.remove('active');
+                }
+            });
         });
 
     </script>
