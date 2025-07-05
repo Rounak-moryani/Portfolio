@@ -23,6 +23,23 @@ body{
     display: flex;
 }
 
+.whole {
+  display: flex;
+}
+
+.side-profile {
+  width: 250px;
+  height: 100vh;
+  background-color: #1a1a1a;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* MENU BUTTON HIDDEN ON DESKTOP */
+.menu-btn {
+  display: none;
+}
+
 .side-profile{
     width: 20%;
     height: 100%;
@@ -33,6 +50,19 @@ body{
     flex-direction: column;
     position: fixed;
 }
+
+.menu-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  z-index: 1100;
+  cursor: pointer;
+}
+
 
 .profile-photo{
     width: 8rem;
